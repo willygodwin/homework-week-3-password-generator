@@ -34,27 +34,18 @@ function generatePassword(){
         if(isLower.checked && index < 0.25) {
           charIndex = Math.round(Math.random() * 25);
           password += passZoo.lower[charIndex];
-          console.log(charIndex)
-          console.log(password)
         }
         if(isUpper.checked && index >= 0.25 && index < 0.5) {
           charIndex = Math.round(Math.random() * 25);
           password += passZoo.upper[charIndex];
-          console.log(charIndex)
-          console.log(password)
         }
         if(isNum.checked && index >= 0.5 && index < 0.75){
           charIndex = Math.round(Math.random() * 9);
           password += passZoo.num[charIndex];
-          console.log(charIndex)
-          console.log(password)
         }
         if(isSpec.checked && index >= 0.75 && index < 1) {
           charIndex =  Math.round(Math.random() * 31)
           password += passZoo.spec[charIndex];
-          console.log(charIndex)
-          console.log(password)
-
         }
 
       }
