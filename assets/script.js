@@ -21,11 +21,11 @@ function generatePassword(){
 
     console.log(passLength);
 
-    if(passLength < 8 || passLength > 124) {
-      alert("Password length must be bewteen 8-124 characters");
+    if(passLength < 8 || passLength > 128) {
+      alert("Password length must be bewteen 8-128 characters");
     }
     else if(!isLower.checked && !isUpper.checked && !isNum.checked && !isSpec.checked) {
-      alert("Please tick atleats one box!");
+      alert("Please tick atleast one box!");
     } 
     else {
       while(password.length < passLength) {
