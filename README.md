@@ -14,3 +14,5 @@ Page Result -
 ![Alt text](/assets/screenshots/page-result.JPG?raw=true "page-result")
 
 URL to deployed Website:
+
+https://willygodwin.github.io/homework-week-3-password-generator/
