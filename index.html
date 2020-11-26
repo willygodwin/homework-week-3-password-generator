@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
@@ -14,18 +15,55 @@
       </header>
       <div class="card">
         <div class="card-header">
-          <h2>Generate a Password</h2>
+          <h2>Enter the details of your password below</h2>
         </div>
-        <h4>Enter the details of your password below</h4>
+        
         <form id="form">
-          <div>
-            <label>Password Length <input type = "number" placeholder="(Enter number between 8-124)" id="passlength" /></label>
+          <div class="row"><br></div>
+          <div class="row">
+            <div class="col-8">
+              <label>Enter a password length between 8-124 characters</label>
+            </div>
+            <div class="col-4">
+              <input type = "number" id="passlength" /></label>
+            </div>
           </div>
-          <div><label>Do you want to include lowercase letters (a, b, c)? </label><input type = "checkbox" id="lower"/></div>
-          <div><label>Do you want to include uppercase letters (A, B, C)? </label><input type = "checkbox" id="upper"/></div>
-          <div><label>Do you want to include numbers (1, 2, 3)? </label><input type = "checkbox" id="number"/></div>
-          <div><label>Do you want to include special characters ($, @, &)? </label><input type = "checkbox" id="special"/></div>
-          
+          <div class="row">
+            <div class="col-8">
+              <label>Do you want to include lowercase letters (a, b, c)?</label>
+            </div>
+            <div class="col-4">
+              <input type = "checkbox" id="lower"/>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <label>Do you want to include uppercase letters (A, B, C)?</label>
+            </div>
+            <div class="col-4">
+              <input type = "checkbox" id="upper"/>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <label>Do you want to include numbers (1, 2, 3)?</label>
+            </div>
+            <div class="col-4">
+              <input type = "checkbox" id="number"/>
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <label>Do you want to include special characters ($, @, &)?</label>
+            </div>
+            <div class="col-4">
+              <input type = "checkbox" id="special"/>
+            </div>
+            
+          </div>
 
         </form>
         <div class="card-body">
@@ -37,7 +75,7 @@
           ></textarea>
         </div>
         <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
+          <button id="generate" type="submit" class="btn btn-primary">Generate Password</button>
         </div>
       </div>
     </div>
